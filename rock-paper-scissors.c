@@ -83,9 +83,9 @@ int getPlayerHand() {
 	} while (1);
 }
 
-void wait(int seconds) {
+void wait(int milliSeconds) {
 	clock_t start_time = clock(); 
-    while (clock() < start_time + 1000);
+    while (clock() < start_time + milliSeconds);
 }
 
 int generateComputerHand() {
